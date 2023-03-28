@@ -18,9 +18,9 @@ public class databaseHandler implements ActionListener {
         }
         @Override
         public void actionPerformed(ActionEvent e) {
-            String jdbcUrl = "jdbc:mysql://localhost:3306/"your database name";
-            String dbname = "your username";
-            String dbpass = "your password";
+            String jdbcUrl = "jdbc:mysql://localhost:3306/'your database name'";
+            String dbname = 'your username';
+            String dbpass = 'your password';
          try {
          Class.forName("com.mysql.cj.jdbc.Driver");
          Connection con=DriverManager.getConnection(jdbcUrl,dbname, dbpass);
